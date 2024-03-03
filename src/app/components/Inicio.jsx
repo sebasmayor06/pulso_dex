@@ -5,7 +5,7 @@ export default function Inicio() {
   return (
     <div className="overflow-x-hidden">
       <div className="inicio flex flex-col md:flex-row w-screen h-screen md:h-700px top-67px overflow-hidden left-0 bg-white">
-        <div className="flex justify-center items-center h-1/2 md:h-full md:w-1/2 w-full pl-4 pr-4">
+        <div className="flex justify-center items-center h-1/2 md:h-full md:w-1/2 w-[90%] pl-4 pr-4">
           <p className="flex flex-col">
             <span className="text-5xl md:text-6xl font-extrabold">
               Descubre el potencial del
@@ -16,7 +16,7 @@ export default function Inicio() {
           </p>
         </div>
 
-        <div className="foto relative flex justify-center items-center h-1/2 md:h-full md:w-1/2 w-full">
+        <div className="foto relative flex justify-center items-center h-1/2 md:h-full md:w-1/2 w-[90%]">
           <Image
             className="p-4 rounded-full"
             src="/Hombrefuturista.jpg"
@@ -38,7 +38,7 @@ export default function Inicio() {
           <div className="bg-mostaza rounded-3xl p-4 justify-center items-center text-white font-extrabold md:text-3xl text-xl absolute top-60 left-24 md:top-80 md:left-48 transform -translate-x-1/2 -translate-y-1/2 inline-flex">
             <span>Gamificación</span>
           </div>
-          <div className="bg-verdeManzana rounded-3xl p-4 justify-center items-center text-white font-extrabold md:text-3xl text-xl absolute left-80 bottom-24 md:bottom-44 md:left-96 transform -translate-x-1/2 -translate-y-1/2 inline-flex">
+          <div className="bg-verdeManzana rounded-3xl p-4 justify-center items-center text-white font-extrabold md:text-3xl text-xl absolute left-[300px] bottom-24 md:bottom-44 md:left-[550px] transform -translate-x-1/2 -translate-y-1/2 inline-flex">
             <span>Desarrollo</span>
           </div>
 

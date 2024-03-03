@@ -23,7 +23,8 @@ module.exports = {
         naranja: '#D66049',
         verdeManzana: '#B9D649',
         mostaza: '#D6AB49',
-        verdeInicio: '#48D64C'
+        verdeInicio: '#48D64C',
+
       },
     },
   },
