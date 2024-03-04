@@ -1,6 +1,6 @@
 export default function FAQ() {
   return (
-    <section className="md:px-12 px-8 flex flex-col gap-8 md:text-base text-sm">
+    <section className="md:p-12 p-8 flex flex-col gap-8 md:text-base text-sm">
       <h2
         className="text-4xl md:text-8xl text-6xl font-normal
             "
