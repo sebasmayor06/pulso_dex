@@ -24,7 +24,7 @@ module.exports = {
         verdeManzana: '#B9D649',
         mostaza: '#D6AB49',
         verdeInicio: '#48D64C',
-
+        gris: '#8C8C8C'
       },
     },
   },
