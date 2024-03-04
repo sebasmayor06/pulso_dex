@@ -1,3 +1,4 @@
+import Empecemos from "./components/Empecemos";
 import FAQ from "./components/FAQ";
 import HowItWorks from "./components/HowItWorks";
 import Inicio from "./components/Inicio";
@@ -10,6 +11,7 @@ export default function Home() {
     <Navbar></Navbar>
     <Inicio></Inicio>
     <Retail></Retail>
+    <Empecemos/>
     <HowItWorks />
     <FAQ />
     </>
