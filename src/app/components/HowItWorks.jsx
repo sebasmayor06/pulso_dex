@@ -27,14 +27,14 @@ export default function HowItWorks() {
           className="w-full bg-white rounded-3xl p-4
         flex flex-col items-center [grid-area:register]"
         >
-          <Image src="/icons/registration.svg" width={50} height={50}/>
+          <Image src="/icons/registration.svg" alt="registrate" width={50} height={50}/>
           <h3 className="xl:text-2xl md:text-xl text-lg font-bold">Regístrese</h3>
         </div>
         <div
           className="w-full bg-white rounded-3xl p-4
         flex flex-col items-center justify-center [grid-area:data]"
         >
-          <Image src="/icons/rare-circle.svg" width={150} height={150}/>
+          <Image src="/icons/rare-circle.svg" alt="Ojo" width={150} height={150}/>
           <h3 className="xl:text-2xl md:text-xl text-lg font-bold">Datos y Análisis</h3>
         </div>
         <div
@@ -83,7 +83,7 @@ export default function HowItWorks() {
           className="w-full bg-white rounded-3xl p-4
         flex flex-col items-center justify-center [grid-area:capital]"
         >
-          <Image src="/icons//wallet.svg" width={50} height={50}/>
+          <Image src="/icons//wallet.svg" alt="billetera" width={50} height={50}/>
           <h3 className="xl:text-2xl md:text-xl text-lg font-bold">Recupere su capital</h3>
         </div>
       </div>
