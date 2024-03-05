@@ -2,15 +2,15 @@ export default function HowItWorks() {
   return (
     <section
       className="md:p-12 p-8 flex flex-col gap-8 md:text-lg text-base
-    text-center bg-gradient-purple"
+    text-center bg-gradient-purple "
     >
       <h2
-        className="text-4xl md:text-6xl text-4xl font-bold 
+        className="text-4xl md:text-6xl font-bold mb-5 
             "
       >
         ¿Cómo funciona?
       </h2>
-      <p className="text-gris">
+      <p className="text-sm  md:text-xl">
         Pulso Dex es un Ecommerce Omnicanal, otorgando una experiencia fluida en
         todos los puntos de contacto con el cliente.
       </p>

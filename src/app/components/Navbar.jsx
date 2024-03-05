@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="hidden md:block">
               <a
                 href="/"
-                className="text-black hover:bg-black hover:text-white rounded-lg p-2"
+                className="text-black rounded-lg p-2"
               >
                 Comienza gratis
               </a>

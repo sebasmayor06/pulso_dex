@@ -1,5 +1,6 @@
 import Empecemos from "./components/Empecemos";
 import FAQ from "./components/FAQ";
+// import Footer from "./components/Footer";
 import HowItWorks from "./components/HowItWorks";
 import Inicio from "./components/Inicio";
 import Navbar from "./components/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
     <Empecemos/>
     <HowItWorks />
     <FAQ />
+    {/* <Footer></Footer> */}
     </>
   );
 }
