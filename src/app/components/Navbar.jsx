@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-export default function Navbar() {
+export default function Navbar({setShowModal2}) {
   const [isClick, setIsClick] = useState(false);
 
   const toogleNavbar = () => {
@@ -47,7 +47,7 @@ export default function Navbar() {
               >
                 Comienza gratis
               </a>
-              <button className="bg-black rounded-lg text-white p-2 hover:bg-white hover:text-black">
+              <button onClick={()=>setShowModal2()} className="bg-black rounded-lg text-white p-2 hover:bg-white hover:text-black">
                 Agenda Demo
               </button>
             </div>
@@ -119,7 +119,7 @@ export default function Navbar() {
               >
                 Comienza gratis
               </a>
-              <button className="bg-black rounded-lg text-white p-2 hover:bg-white hover:text-black">
+              <button onClick={()=>setShowModal2()} className="bg-black rounded-lg text-white p-2 hover:bg-white hover:text-black">
                 Agenda Demo
               </button>
             </div>

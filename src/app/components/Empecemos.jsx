@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 
-export default function Empecemos() {
+export default function Empecemos({setShowModal2}) {
     const [numero, setNumero] = useState(1);
 
     const handleNumero = (value) => {
@@ -12,7 +12,7 @@ export default function Empecemos() {
     <div className=" border-b-2 border-gray-400 shadow-xl">
 
     <div className="flex justify-center items-center flex-col p-32 relative">
-      <h1 className="text-4xl md:text-6xl font-bold mb-5">Empecemos</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-5 ">Empecemos</h1>
       <div className="flex justify-center items-center flex-col relative">
         <span className="text-sm  md:text-xl">
           Elija el ranking que quiere pertenecer, envíe todos los requisitos y
@@ -69,7 +69,7 @@ export default function Empecemos() {
         </div>
         <div className="flex justify-center items-center mt-10">
         <div className="numero text-black bg-verdeManzana bg-opacity-50  rounded-l-lg font-bold w-16 md:w-24 justify-center flex items-center h-14 md:h-14">{`${numero}M`}</div>
-        <button className="border-2 backdrop:blur bg-gradient-to-r from-white/80 to-black/20 text-sm md:text-xl font-bold p-4 md:p-3 rounded-r-lg hover:bg-gray-400 hover:bg-opacity-50">Empezar</button>
+        <button onClick={()=>setShowModal2()} className="border-2 backdrop:blur bg-gradient-to-r from-white/80 to-black/20 text-sm md:text-xl font-bold p-4 md:p-3 rounded-r-lg hover:bg-gray-400 hover:bg-opacity-50">Empezar</button>
         </div>
       </div>
     </div>
