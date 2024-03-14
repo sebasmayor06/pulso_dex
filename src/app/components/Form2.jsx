@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Button, Form, Input, Select, Spin } from "antd";
 const { Option } = Select;
@@ -24,20 +25,15 @@ export default function Form2({ isVisible, onClose }) {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
-  const simulateRegisterRequest = async (formData) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(formData);
-      }, 2000);
-    });
-  };
+ 
   const onFinish = async (values) => {
+    console.log(values);
     setLoading(true);
     try {
-      const response = await simulateRegisterRequest(values);
-      console.log("Registro exitoso:", response);
+      const response = await axios.post('http://localhost:8080/usuario', values);
+      console.log("Usuario creado con éxito", response.data);
     } catch (error) {
-      console.error("Error al registrar:", error);
+      console.log("Error al crear el usuario", error.response || error);
     } finally {
       setLoading(false);
       onClose();
@@ -86,8 +82,8 @@ export default function Form2({ isVisible, onClose }) {
             scrollToFirstError
           >
             <Form.Item
-              name="email"
-              label="E-mail"
+              name="correo"
+              label="Correo Electronico"
               rules={[
                 { type: "email", message: "The input is not valid E-mail!" },
                 { required: true, message: "Please input your E-mail!" },
@@ -97,7 +93,7 @@ export default function Form2({ isVisible, onClose }) {
             </Form.Item>
 
             <Form.Item
-              name="Nombre_Completo"
+              name="nombre"
               label="Nombre Completo"
               rules={[
                 {
@@ -111,8 +107,8 @@ export default function Form2({ isVisible, onClose }) {
             </Form.Item>
 
             <Form.Item
-              name="phone"
-              label="Phone Number"
+              name="numero"
+              label="Telefono"
               rules={[
                 { required: true, message: "Please input your phone number!" },
               ]}
